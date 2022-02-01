@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <title>Project 1 - Piano Party</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="all">
+    <div id="navigation" class="container">
+        <div class="left">
+            Tune: 
+            <select name="songs" id="songs">
+                <option value="FurElise">Für Elise</option>
+                <option value="TheGodfather">The Godfather</option>
+                <option value="SevenNationArmy">Seven Nation Army</option>
+            </select>
+            <button id="play" type="button" class="nav"></button>
+        </div>
+        <div class="right">
+            Record:
+            <button id="record" type="button" class="nav"></button>
+            <button id="stop" type="button" class="nav"></button>
+        </div>
+    </div>
+    <br />
+    <div id="piano" class="container">
+        <div id="whites">
+            <button class="white">C4 <br />(a)</button>
+            <button class="white">D4 <br />(s)</button>            
+            <button class="white">E4 <br />(d)</button>    
+            <button class="white">F4 <br />(f)</button>            
+            <button class="white">G4 <br />(g)</button>            
+            <button class="white">A4 <br />(h)</button>            
+            <button class="white">B4 <br />(j)</button>    
+            <button class="white">C5 <br />(k)</button>            
+            <button class="white">D5 <br />(l)</button>            
+            <button class="white">E5 <br />(;)</button>
+        </div>
+        <div id="blacks">
+            <button class="black c4">C#4 <br />(w)</button>
+            <button class="black c4">D#4 <br />(e)</button>
+            <button class="black f4">F#4 <br />(t)</button> 
+            <button class="black f4">G#4 <br />(y)</button>
+            <button class="black f4">Bb4 <br />(u)</button>
+            <button class="black c5">C#5 <br />(o)</button>
+            <button class="black c5">D#5 <br />(p)</button>
+        </div>
+        
+    </div>
+    </div>
+    <div id="error">
+    <img src="oops.jpg" alt="oopsie">
+    <p>This website requires at least 600px screen width.</p>
+    </div>
+    
+</body>
+</html>

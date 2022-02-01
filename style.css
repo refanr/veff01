@@ -1,0 +1,120 @@
+* {
+    
+    width: 99%;
+}
+#all {
+    margin-left: 2em;
+    display: flex;
+    flex-direction: column; 
+}
+.container {
+    margin-top: 1em;
+}
+.left  {
+    width: 48%;
+    float: left;
+}
+.right {
+    width: 48%;
+}
+
+.nav {
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center ;
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+    border: 1px solid black;
+    position: relative;
+
+}
+
+#navigation {
+    display: flex;
+ 
+}
+#songs {
+    width: 35%;
+}
+
+#play {
+    background-image: url("play.png");
+}
+#record {
+    background-image: url("record.png");
+}
+#stop {
+    background-image: url("stop.png");
+}
+#piano  {
+
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    
+
+  }
+
+.white {
+    background-color: white;
+    height: 150px;
+    padding: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-width: 3px;
+    border-style: outset;
+    width: 9%;
+    
+
+}
+.white:active,.black:active {
+    background-color: gray;
+}
+.black {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-width: 3px;
+    border-style: outset;
+    width: 5%;
+    height: 100px;
+    position: relative;
+    left: 6.5%;
+    bottom: 150px;
+    
+       
+}
+#whites {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: flex-start;
+    flex-grow: 1;
+
+}
+#blacks {
+    display: flex;
+    gap: 4%;
+}
+
+.f4 {
+    position: relative;
+    left: 15.5%;
+}
+.c5 {
+    position: relative;
+    left: 24.5%;
+}
+
+@media screen and (max-width: 599px) {
+    #all {display: none;}
+    #error {display: flex;flex-direction: column;padding: 1%; text-align: center;}
+  
+}
+@media screen and (min-width: 600px){
+    #error {display: none;} 
+}
